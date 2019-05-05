@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -307,6 +307,22 @@
 <wire x1="-1.975" y1="-3.25" x2="-1.975" y2="3.25" width="0.2" layer="21"/>
 <wire x1="-3.975" y1="3.125" x2="-2.325" y2="3.125" width="0.2" layer="21"/>
 </package>
+<package name="SOT23-5P95_280X145XL45X37N">
+<wire x1="-0.8" y1="1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
+<wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
+<wire x1="1.91" y1="1.7" x2="-1.91" y2="1.7" width="0.05" layer="39"/>
+<wire x1="-1.91" y1="1.7" x2="-1.91" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="-1.91" y1="-1.7" x2="1.91" y2="-1.7" width="0.05" layer="39"/>
+<wire x1="1.91" y1="-1.7" x2="1.91" y2="1.7" width="0.05" layer="39"/>
+<circle x="-1.7" y="1.5" radius="0.13" width="0" layer="21"/>
+<text x="-1.35215" y="1.802859375" size="0.61056875" layer="25">&gt;NAME</text>
+<text x="-1.5542" y="-2.50678125" size="0.611253125" layer="27">&gt;VALUE</text>
+<smd name="1" x="-1.14" y="0.95" dx="0.6" dy="1.14" layer="1" roundness="53" rot="R90"/>
+<smd name="2" x="-1.14" y="0" dx="0.6" dy="1.14" layer="1" roundness="53" rot="R90"/>
+<smd name="3" x="-1.14" y="-0.95" dx="0.6" dy="1.14" layer="1" roundness="53" rot="R90"/>
+<smd name="4" x="1.14" y="-0.95" dx="0.6" dy="1.14" layer="1" roundness="53" rot="R90"/>
+<smd name="5" x="1.14" y="0.95" dx="0.6" dy="1.14" layer="1" roundness="53" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LD39050PU33R">
@@ -379,6 +395,18 @@
 <pin name="VOUT" x="0" y="-2.54" length="middle" direction="out"/>
 <pin name="VIN" x="30.48" y="0" length="middle" direction="in" rot="R180"/>
 <pin name="TAB" x="30.48" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MIC5504-1.2YM5-TR">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<text x="-7.64153125" y="8.15096875" size="1.78303125" layer="95">&gt;NAME</text>
+<text x="-7.6308" y="-10.1744" size="1.78051875" layer="96">&gt;VALUE</text>
+<pin name="VIN" x="10.16" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="10.16" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="EN" x="-10.16" y="5.08" length="short" direction="in"/>
+<pin name="VOUT" x="10.16" y="0" length="short" direction="out" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -539,6 +567,58 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/LD1117S33TR.p
 <attribute name="MANUFACTURER_NAME" value="STMicroelectronics" constant="no"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="LD1117S33TR" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="511-LD1117S33" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC5504-1.2YM5-TR" prefix="U">
+<description>Single 300mA LDO with Enable Pull-Down &amp; Auto Discharge, 5 SOT-23 T/R</description>
+<gates>
+<gate name="G$1" symbol="MIC5504-1.2YM5-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5P95_280X145XL45X37N">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Single 300mA LDO with Enable Pull-Down &amp; Auto Discharge, 5 SOT-23 T/R "/>
+<attribute name="MF" value="Microchip"/>
+<attribute name="MP" value="MIC5504-1.2YM5-TR"/>
+<attribute name="PACKAGE" value="SOT-23 Microchip"/>
+<attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MIC5504-3.3YM5-TR" prefix="U">
+<description>Single 300mA LDO with Enable Pull-Down &amp; Auto Discharge, 5 SOT-23 T/R</description>
+<gates>
+<gate name="G$1" symbol="MIC5504-1.2YM5-TR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5P95_280X145XL45X37N">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AVAILABILITY" value="Unavailable"/>
+<attribute name="DESCRIPTION" value=" Single 300mA LDO with Enable Pull-Down &amp; Auto Discharge, 5 SOT-23 T/R "/>
+<attribute name="MF" value="Microchip"/>
+<attribute name="MP" value="MIC5504-1.2YM5-TR"/>
+<attribute name="PACKAGE" value="SOT-23 Microchip"/>
+<attribute name="PRICE" value="None"/>
 </technology>
 </technologies>
 </device>
