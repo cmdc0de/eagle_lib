@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.1">
+<eagle version="9.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -464,6 +464,36 @@ Through-hole SPDT Switch&lt;br&gt;
 <hole x="-1.5" y="0" drill="0.9"/>
 <hole x="1.5" y="0" drill="0.9"/>
 </package>
+<package name="MSS3VTR">
+<description>&lt;b&gt;MSS3-V-T/R-1&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="A1" x="-2.25" y="3.05" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="B1" x="0.75" y="3.05" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<smd name="C1" x="2.25" y="3.05" dx="1.5" dy="0.7" layer="1" rot="R90"/>
+<hole x="-1.5" y="1.3" drill="0.9"/>
+<hole x="1.5" y="1.3" drill="0.9"/>
+<smd name="MP1" x="-3.65" y="2.35" dx="1" dy="0.8" layer="1"/>
+<smd name="MP2" x="-3.65" y="0.25" dx="1" dy="0.8" layer="1"/>
+<smd name="MP3" x="3.65" y="0.25" dx="1" dy="0.8" layer="1"/>
+<smd name="MP4" x="3.65" y="2.35" dx="1" dy="0.8" layer="1"/>
+<text x="0" y="6.23" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="-3.93" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3.35" y1="2.6" x2="3.35" y2="2.6" width="0.2" layer="51"/>
+<wire x1="3.35" y1="2.6" x2="3.35" y2="0" width="0.2" layer="51"/>
+<wire x1="3.35" y1="0" x2="-3.35" y2="0" width="0.2" layer="51"/>
+<wire x1="-3.35" y1="0" x2="-3.35" y2="2.6" width="0.2" layer="51"/>
+<wire x1="-4.85" y1="4.5" x2="4.85" y2="4.5" width="0.1" layer="51"/>
+<wire x1="4.85" y1="4.5" x2="4.85" y2="-2.2" width="0.1" layer="51"/>
+<wire x1="4.85" y1="-2.2" x2="-4.85" y2="-2.2" width="0.1" layer="51"/>
+<wire x1="-4.85" y1="-2.2" x2="-4.85" y2="4.5" width="0.1" layer="51"/>
+<wire x1="-2.5" y1="0" x2="2.5" y2="0" width="0.1" layer="21"/>
+<wire x1="-3.35" y1="1.05" x2="-3.35" y2="1.55" width="0.1" layer="21"/>
+<wire x1="3.35" y1="1.05" x2="3.35" y2="1.55" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="2.6" x2="0" y2="2.6" width="0.1" layer="21"/>
+<wire x1="-0.65" y1="0" x2="-0.65" y2="-1.5" width="0.2" layer="51"/>
+<wire x1="-0.65" y1="-1.5" x2="0.65" y2="-1.5" width="0.2" layer="51"/>
+<wire x1="0.65" y1="-1.5" x2="0.65" y2="0" width="0.2" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOMEMTARY_SWITCH">
@@ -497,6 +527,21 @@ Through-hole SPDT Switch&lt;br&gt;
 <pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <pin name="S" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
 <pin name="O" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="MSS3-V-T_R">
+<wire x1="5.08" y1="2.54" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-10.16" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-10.16" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-10.16" width="0.254" layer="94"/>
+<text x="21.59" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="21.59" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="NO" x="0" y="0" length="middle"/>
+<pin name="COM" x="0" y="-2.54" length="middle"/>
+<pin name="GND" x="0" y="-5.08" length="middle"/>
+<pin name="MP1" x="0" y="-7.62" length="middle"/>
+<pin name="MP2" x="25.4" y="0" length="middle" rot="R180"/>
+<pin name="MP3" x="25.4" y="-2.54" length="middle" rot="R180"/>
+<pin name="MP4" x="25.4" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -645,6 +690,53 @@ Simple slide switch.</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH_SPDT-1">
+<gates>
+<gate name="G$1" symbol="SWITCH_SPDT" x="5.08" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPDT_SSAJ120100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MSS3-V-T_R" prefix="S">
+<description>&lt;b&gt;Slide Switches Slide Type 1P2T (1.4mm height)&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.dip.com.tw/en/en-product-information/en-switch005/item/download/2643_3624e6da26abd0f9c3465d69564276ea"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="MSS3-V-T_R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSS3VTR">
+<connects>
+<connect gate="G$1" pin="COM" pad="B1"/>
+<connect gate="G$1" pin="GND" pad="C1"/>
+<connect gate="G$1" pin="MP1" pad="MP1"/>
+<connect gate="G$1" pin="MP2" pad="MP2"/>
+<connect gate="G$1" pin="MP3" pad="MP3"/>
+<connect gate="G$1" pin="MP4" pad="MP4"/>
+<connect gate="G$1" pin="NO" pad="A1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Slide Switches Slide Type 1P2T (1.4mm height)" constant="no"/>
+<attribute name="HEIGHT" value="1.4mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Diptronics" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="MSS3-V-T/R" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="113-MSS3-V-T/R" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=113-MSS3-V-T%2FR" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
