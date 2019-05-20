@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -985,6 +985,39 @@
 <text x="0" y="27.2415" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-27.2415" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="DIP810W58P254L1930H342Q16B" urn="urn:adsk.eagle:footprint:11134779/1">
+<description>16-DIP, 2.54 mm (0.10 in) pitch, 8.10 mm (0.32 in) span, 19.30 X 6.47 X 3.43 mm body
+&lt;p&gt;16-pin DIP package with 2.54 mm (0.10 in) pitch, 8.10 mm (0.32 in) span with body size 19.30 X 6.47 X 3.43 mm&lt;/p&gt;</description>
+<circle x="-5.2501" y="8.89" radius="0.25" width="0" layer="21"/>
+<wire x1="-3.3" y1="9.8401" x2="-3.3" y2="9.905" width="0.12" layer="21"/>
+<wire x1="-3.3" y1="9.905" x2="3.3" y2="9.905" width="0.12" layer="21"/>
+<wire x1="3.3" y1="9.905" x2="3.3" y2="9.8401" width="0.12" layer="21"/>
+<wire x1="-3.3" y1="-9.8401" x2="-3.3" y2="-9.905" width="0.12" layer="21"/>
+<wire x1="-3.3" y1="-9.905" x2="3.3" y2="-9.905" width="0.12" layer="21"/>
+<wire x1="3.3" y1="-9.905" x2="3.3" y2="-9.8401" width="0.12" layer="21"/>
+<wire x1="3.3" y1="-9.905" x2="-3.3" y2="-9.905" width="0.12" layer="51"/>
+<wire x1="-3.3" y1="-9.905" x2="-3.3" y2="9.905" width="0.12" layer="51"/>
+<wire x1="-3.3" y1="9.905" x2="3.3" y2="9.905" width="0.12" layer="51"/>
+<wire x1="3.3" y1="9.905" x2="3.3" y2="-9.905" width="0.12" layer="51"/>
+<pad name="1" x="-4.05" y="8.89" drill="0.7923" diameter="1.3923"/>
+<pad name="2" x="-4.05" y="6.35" drill="0.7923" diameter="1.3923"/>
+<pad name="3" x="-4.05" y="3.81" drill="0.7923" diameter="1.3923"/>
+<pad name="4" x="-4.05" y="1.27" drill="0.7923" diameter="1.3923"/>
+<pad name="5" x="-4.05" y="-1.27" drill="0.7923" diameter="1.3923"/>
+<pad name="6" x="-4.05" y="-3.81" drill="0.7923" diameter="1.3923"/>
+<pad name="7" x="-4.05" y="-6.35" drill="0.7923" diameter="1.3923"/>
+<pad name="8" x="-4.05" y="-8.89" drill="0.7923" diameter="1.3923"/>
+<pad name="9" x="4.05" y="-8.89" drill="0.7923" diameter="1.3923"/>
+<pad name="10" x="4.05" y="-6.35" drill="0.7923" diameter="1.3923"/>
+<pad name="11" x="4.05" y="-3.81" drill="0.7923" diameter="1.3923"/>
+<pad name="12" x="4.05" y="-1.27" drill="0.7923" diameter="1.3923"/>
+<pad name="13" x="4.05" y="1.27" drill="0.7923" diameter="1.3923"/>
+<pad name="14" x="4.05" y="3.81" drill="0.7923" diameter="1.3923"/>
+<pad name="15" x="4.05" y="6.35" drill="0.7923" diameter="1.3923"/>
+<pad name="16" x="4.05" y="8.89" drill="0.7923" diameter="1.3923"/>
+<text x="0" y="10.54" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-10.54" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIP1587W58P254L5175H635Q40B" urn="urn:adsk.eagle:package:10791262/1" type="model">
@@ -992,6 +1025,13 @@
 &lt;p&gt;40-pin DIP package with 2.54 mm (0.10 in) pitch, 15.88 mm (0.63 in) span with body size 51.75 X 13.53 X 6.35 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="DIP1587W58P254L5175H635Q40B"/>
+</packageinstances>
+</package3d>
+<package3d name="DIP810W58P254L1930H342Q16B" urn="urn:adsk.eagle:package:11134776/1" type="model">
+<description>16-DIP, 2.54 mm (0.10 in) pitch, 8.10 mm (0.32 in) span, 19.30 X 6.47 X 3.43 mm body
+&lt;p&gt;16-pin DIP package with 2.54 mm (0.10 in) pitch, 8.10 mm (0.32 in) span with body size 19.30 X 6.47 X 3.43 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="DIP810W58P254L1930H342Q16B"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1441,6 +1481,37 @@
 <wire x1="-12.7" y1="-25.4" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-25.4" x2="10.16" y2="27.94" width="0.254" layer="94"/>
 <wire x1="10.16" y1="27.94" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
+</symbol>
+<symbol name="74F219">
+<description>74F219: 64-Bit Random Access Memory with 3-STATE Outputs&lt;br&gt;
+The 74F219 is a high-speed 64-bit RAM organized as a 16-
+word by 4-bit array. Address inputs are buffered to minimize
+loading and are fully decoded on-chip. The outputs
+are 3-STATE and are in the high-impedance state whenever
+the Chip Select (CS) input is HIGH. The outputs are
+active only in the Read mode. This device is similar to the
+74F189 but features non-inverting, rather than inverting,
+data outputs.</description>
+<pin name="A0" x="-11.43" y="10.16" length="short" direction="in"/>
+<pin name="CS" x="-11.43" y="7.62" length="short" direction="in"/>
+<pin name="WE" x="-11.43" y="5.08" length="short" direction="in"/>
+<pin name="D0" x="-11.43" y="2.54" length="short" direction="in"/>
+<pin name="O0" x="-11.43" y="0" length="short" direction="out"/>
+<pin name="D1" x="-11.43" y="-2.54" length="short" direction="in"/>
+<pin name="O1" x="-11.43" y="-5.08" length="short" direction="out"/>
+<pin name="GND" x="-11.43" y="-7.62" length="short"/>
+<pin name="O2" x="11.43" y="-7.62" length="short" direction="out" rot="R180"/>
+<pin name="D2" x="11.43" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="O3" x="11.43" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="D3" x="11.43" y="0" length="short" direction="in" rot="R180"/>
+<pin name="A3" x="11.43" y="2.54" length="short" rot="R180"/>
+<pin name="A2" x="11.43" y="5.08" length="short" rot="R180"/>
+<pin name="A1" x="11.43" y="7.62" length="short" rot="R180"/>
+<pin name="VCC5V" x="11.43" y="10.16" length="short" direction="pwr" rot="R180"/>
+<wire x1="-9.144" y1="12.7" x2="-9.144" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-9.144" y1="-10.16" x2="8.636" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="8.636" y1="-10.16" x2="8.636" y2="12.7" width="0.254" layer="94"/>
+<wire x1="8.636" y1="12.7" x2="-9.144" y2="12.7" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2099,6 +2170,39 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/sn74ls283"&gt; Datasheet &lt;/a&gt
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:10791262/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74F219">
+<gates>
+<gate name="G$1" symbol="74F219" x="0" y="0"/>
+</gates>
+<devices>
+<device name="74F189-DIP-16" package="DIP810W58P254L1930H342Q16B">
+<connects>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="15"/>
+<connect gate="G$1" pin="A2" pad="14"/>
+<connect gate="G$1" pin="A3" pad="13"/>
+<connect gate="G$1" pin="CS" pad="2"/>
+<connect gate="G$1" pin="D0" pad="4"/>
+<connect gate="G$1" pin="D1" pad="6"/>
+<connect gate="G$1" pin="D2" pad="10"/>
+<connect gate="G$1" pin="D3" pad="12"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="O0" pad="5"/>
+<connect gate="G$1" pin="O1" pad="7"/>
+<connect gate="G$1" pin="O2" pad="9"/>
+<connect gate="G$1" pin="O3" pad="11"/>
+<connect gate="G$1" pin="VCC5V" pad="16"/>
+<connect gate="G$1" pin="WE" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11134776/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
