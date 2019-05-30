@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.2">
+<eagle version="9.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -557,10 +557,10 @@
 <smd name="A" x="0.76" y="0" dx="0.91" dy="0.93" layer="1" roundness="25"/>
 </package>
 <package name="APA106-F5-PH">
-<pad name="1" x="-2.54" y="0" drill="0.75" diameter="0.8" shape="long" rot="R90" stop="no" thermals="no"/>
-<pad name="2" x="-1.27" y="0" drill="0.75" diameter="0.8" shape="long" rot="R90" stop="no" thermals="no"/>
-<pad name="3" x="0" y="0" drill="0.75" diameter="0.8" shape="long" rot="R90" stop="no" thermals="no"/>
-<pad name="4" x="1.27" y="0" drill="0.75" diameter="0.8" shape="long" rot="R90" stop="no" thermals="no"/>
+<pad name="1" x="-2.54" y="0" drill="0.75" diameter="0.85" shape="long" rot="R90" stop="no" thermals="no"/>
+<pad name="2" x="-1.27" y="0" drill="0.75" diameter="0.85" shape="long" rot="R90" stop="no" thermals="no"/>
+<pad name="3" x="0" y="0" drill="0.75" diameter="0.85" shape="long" rot="R90" stop="no" thermals="no"/>
+<pad name="4" x="1.27" y="0" drill="0.75" diameter="0.85" shape="long" rot="R90" stop="no" thermals="no"/>
 <wire x1="-3.41" y1="1.37" x2="-3.41" y2="-1.47" width="0.127" layer="21"/>
 </package>
 <package name="SOP65P640X120-28N">
@@ -1033,7 +1033,7 @@ PIN4 = DIN</description>
 </symbols>
 <devicesets>
 <deviceset name="APA-106">
-<description>PIN1=DOUT&lt;br&gt;PIN2=GND&lt;br&gt;PIN3=VCC&lt;br&gt;PIN4=DIN</description>
+<description>PIN1=DOUT &lt;br&gt;PIN2=GND &lt;br&gt;PIN3=VCC &lt;br&gt;PIN4=DIN</description>
 <gates>
 <gate name="G$1" symbol="WS2812B_STRAIGHT" x="0" y="0"/>
 </gates>
