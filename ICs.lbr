@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1699,11 +1699,13 @@ data outputs.</description>
 <pin name="CE2" x="14.224" y="11.43" length="middle" direction="in" rot="R180"/>
 <pin name="WE#" x="14.224" y="13.97" length="middle" direction="in" rot="R180"/>
 <pin name="VCC" x="14.224" y="16.51" length="middle" direction="pwr" rot="R180"/>
-<wire x1="-11.176" y1="19.05" x2="-11.176" y2="-19.05" width="0.254" layer="94"/>
-<wire x1="-11.176" y1="-19.05" x2="11.684" y2="-19.05" width="0.254" layer="94"/>
-<wire x1="11.684" y1="-19.05" x2="11.684" y2="19.05" width="0.254" layer="94"/>
-<wire x1="11.684" y1="19.05" x2="-11.176" y2="19.05" width="0.254" layer="94"/>
-<circle x="-10.922" y="21.082" radius="0.567959375" width="0.254" layer="94"/>
+<wire x1="-8.636" y1="19.05" x2="-8.636" y2="-19.05" width="0.254" layer="94"/>
+<wire x1="-8.636" y1="-19.05" x2="9.144" y2="-19.05" width="0.254" layer="94"/>
+<wire x1="9.144" y1="-19.05" x2="9.144" y2="19.05" width="0.254" layer="94"/>
+<wire x1="9.144" y1="19.05" x2="-8.636" y2="19.05" width="0.254" layer="94"/>
+<circle x="-9.652" y="20.066" radius="0.567959375" width="0.254" layer="94"/>
+<text x="-6.096" y="20.066" size="1.778" layer="95">AS6C6264</text>
+<text x="-3.302" y="-21.844" size="1.778" layer="95">SRAM</text>
 </symbol>
 </symbols>
 <devicesets>
