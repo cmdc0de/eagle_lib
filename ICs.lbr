@@ -1684,7 +1684,7 @@ data outputs.</description>
 <pin name="A13" x="-15.24" y="20.32" length="middle"/>
 <pin name="A14" x="-15.24" y="17.78" length="middle"/>
 <pin name="A15" x="-15.24" y="15.24" length="middle"/>
-<pin name="NC" x="-15.24" y="12.7" length="middle" direction="nc"/>
+<pin name="CLK" x="-15.24" y="12.7" length="middle" direction="in"/>
 <pin name="D4" x="-15.24" y="10.16" length="middle"/>
 <pin name="D3" x="-15.24" y="7.62" length="middle"/>
 <pin name="D5" x="-15.24" y="5.08" length="middle"/>
@@ -2631,6 +2631,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/sn74ls04"&gt; Datasheet &lt;/a&gt;
 <connect gate="G$1" pin="A7" pad="37"/>
 <connect gate="G$1" pin="A8" pad="38"/>
 <connect gate="G$1" pin="A9" pad="39"/>
+<connect gate="G$1" pin="CLK" pad="6"/>
 <connect gate="G$1" pin="D0" pad="14"/>
 <connect gate="G$1" pin="D1" pad="15"/>
 <connect gate="G$1" pin="D2" pad="12"/>
@@ -2640,7 +2641,6 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/sn74ls04"&gt; Datasheet &lt;/a&gt;
 <connect gate="G$1" pin="D6" pad="10"/>
 <connect gate="G$1" pin="D7" pad="13"/>
 <connect gate="G$1" pin="GND" pad="29"/>
-<connect gate="G$1" pin="NC" pad="6"/>
 <connect gate="G$1" pin="VDD5V" pad="11"/>
 <connect gate="G$1" pin="_BUSAK" pad="23"/>
 <connect gate="G$1" pin="_BUSRQ" pad="25"/>
