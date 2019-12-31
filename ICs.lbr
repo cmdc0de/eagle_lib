@@ -432,33 +432,30 @@
 <wire x1="-4.65" y1="-4.65" x2="-4.65" y2="4.65" width="0.2" layer="21"/>
 <circle x="-6.225" y="4.5" radius="0.125" width="0.25" layer="25"/>
 </package>
-<package name="SOIC127P600X175-8N">
-<description>&lt;b&gt;8S1 - JEDEC SOIC&lt;/b&gt;&lt;br&gt;
-</description>
-<smd name="1" x="-2.712" y="1.905" dx="1.525" dy="0.65" layer="1"/>
-<smd name="2" x="-2.712" y="0.635" dx="1.525" dy="0.65" layer="1"/>
-<smd name="3" x="-2.712" y="-0.635" dx="1.525" dy="0.65" layer="1"/>
-<smd name="4" x="-2.712" y="-1.905" dx="1.525" dy="0.65" layer="1"/>
-<smd name="5" x="2.712" y="-1.905" dx="1.525" dy="0.65" layer="1"/>
-<smd name="6" x="2.712" y="-0.635" dx="1.525" dy="0.65" layer="1"/>
-<smd name="7" x="2.712" y="0.635" dx="1.525" dy="0.65" layer="1"/>
-<smd name="8" x="2.712" y="1.905" dx="1.525" dy="0.65" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-3.725" y1="2.775" x2="3.725" y2="2.775" width="0.05" layer="51"/>
-<wire x1="3.725" y1="2.775" x2="3.725" y2="-2.775" width="0.05" layer="51"/>
-<wire x1="3.725" y1="-2.775" x2="-3.725" y2="-2.775" width="0.05" layer="51"/>
-<wire x1="-3.725" y1="-2.775" x2="-3.725" y2="2.775" width="0.05" layer="51"/>
-<wire x1="-1.95" y1="2.462" x2="1.95" y2="2.462" width="0.1" layer="51"/>
-<wire x1="1.95" y1="2.462" x2="1.95" y2="-2.462" width="0.1" layer="51"/>
-<wire x1="1.95" y1="-2.462" x2="-1.95" y2="-2.462" width="0.1" layer="51"/>
-<wire x1="-1.95" y1="-2.462" x2="-1.95" y2="2.462" width="0.1" layer="51"/>
-<wire x1="-1.95" y1="1.192" x2="-0.68" y2="2.462" width="0.1" layer="51"/>
-<wire x1="-1.6" y1="2.462" x2="1.6" y2="2.462" width="0.2" layer="21"/>
-<wire x1="1.6" y1="2.462" x2="1.6" y2="-2.462" width="0.2" layer="21"/>
-<wire x1="1.6" y1="-2.462" x2="-1.6" y2="-2.462" width="0.2" layer="21"/>
-<wire x1="-1.6" y1="-2.462" x2="-1.6" y2="2.462" width="0.2" layer="21"/>
-<wire x1="-3.475" y1="2.58" x2="-1.95" y2="2.58" width="0.2" layer="21"/>
+<package name="SOIC127P600X175-8N" urn="urn:adsk.eagle:footprint:16126586/1">
+<description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.90 X 3.90 X 1.75 mm body
+&lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
+<circle x="-2.7288" y="2.6936" radius="0.25" width="0" layer="21"/>
+<wire x1="-2" y1="2.4436" x2="-2" y2="2.5" width="0.12" layer="21"/>
+<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.12" layer="21"/>
+<wire x1="2" y1="2.5" x2="2" y2="2.4436" width="0.12" layer="21"/>
+<wire x1="-2" y1="-2.4436" x2="-2" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="-2" y1="-2.5" x2="2" y2="-2.5" width="0.12" layer="21"/>
+<wire x1="2" y1="-2.5" x2="2" y2="-2.4436" width="0.12" layer="21"/>
+<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.12" layer="51"/>
+<wire x1="-2" y1="-2.5" x2="-2" y2="2.5" width="0.12" layer="51"/>
+<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.12" layer="51"/>
+<wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.12" layer="51"/>
+<smd name="1" x="-2.4734" y="1.905" dx="1.9685" dy="0.5691" layer="1"/>
+<smd name="2" x="-2.4734" y="0.635" dx="1.9685" dy="0.5691" layer="1"/>
+<smd name="3" x="-2.4734" y="-0.635" dx="1.9685" dy="0.5691" layer="1"/>
+<smd name="4" x="-2.4734" y="-1.905" dx="1.9685" dy="0.5691" layer="1"/>
+<smd name="5" x="2.4734" y="-1.905" dx="1.9685" dy="0.5691" layer="1"/>
+<smd name="6" x="2.4734" y="-0.635" dx="1.9685" dy="0.5691" layer="1"/>
+<smd name="7" x="2.4734" y="0.635" dx="1.9685" dy="0.5691" layer="1"/>
+<smd name="8" x="2.4734" y="1.905" dx="1.9685" dy="0.5691" layer="1"/>
+<text x="0" y="3.5786" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.135" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
 <package name="DIP762W53P254L980H533Q8N">
 <description>&lt;b&gt;8-DIP&lt;/b&gt;&lt;br&gt;
@@ -1075,6 +1072,13 @@
 &lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 7.98 mm span with body size 5.24 X 5.29 X 2.16 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOIC127P798X216-8N"/>
+</packageinstances>
+</package3d>
+<package3d name="SOIC127P600X175-8N" urn="urn:adsk.eagle:package:16126582/1" type="model">
+<description>8-SOIC, 1.27 mm pitch, 6.00 mm span, 4.90 X 3.90 X 1.75 mm body
+&lt;p&gt;8-pin SOIC package with 1.27 mm pitch, 6.00 mm span with body size 4.90 X 3.90 X 1.75 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOIC127P600X175-8N"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1725,6 +1729,31 @@ data outputs.</description>
 <wire x1="10.16" y1="27.94" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
 <circle x="-14.224" y="29.718" radius="1.077628125" width="0.254" layer="94"/>
 </symbol>
+<symbol name="STM32G031J6">
+<description>1. PB7=PB8/PB9/PC14/OSC32_IN &lt;br&gt;
+2. VDD/VDDA &lt;br&gt;
+3. VSS/VSSA &lt;br&gt;
+4. PA0=PA1/PA2/PF2-NRST &lt;br&gt;
+5. PA8=PA11/PA9/PB0/PB1 &lt;br&gt;
+6. PA12 = PA10&lt;br&gt;
+7. PA13 = T_JTMS&lt;br&gt; 
+8. PB5=PB6/PA14-BOOT0/PA15/T_JTCK &lt;br&gt;
+
+&lt;a href="https://www.st.com/resource/en/datasheet/stm32g031c6.pdf"&gt;datasheet&lt;/a&gt;</description>
+<pin name="PB7" x="-15.24" y="10.16" length="middle"/>
+<pin name="VDD" x="-15.24" y="5.08" length="middle" direction="pwr"/>
+<pin name="VSS" x="-15.24" y="0" length="middle" direction="pwr"/>
+<pin name="NRST" x="-15.24" y="-5.08" length="middle"/>
+<pin name="PA8" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="PA12" x="12.7" y="0" length="middle" rot="R180"/>
+<pin name="PA13" x="12.7" y="5.08" length="middle" rot="R180"/>
+<pin name="PB5" x="12.7" y="10.16" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<circle x="-11.938" y="14.478" radius="1.077628125" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ESP32-WROVER-I_(16/8/4MB)" prefix="IC">
@@ -1970,6 +1999,9 @@ Source: &lt;a href="http://www.mouser.com/datasheet/2/268/doc8126-1315482.pdf"&g
 <connect gate="G$1" pin="[PCINT3/CLKI/ADC3]_PB3" pad="2"/>
 <connect gate="G$1" pin="[PCINT4/ADC2]_PB4" pad="3"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16126582/1"/>
+</package3dinstances>
 <technologies>
 <technology name="">
 <attribute name="DESCRIPTION" value="ATTINY13A-SSU, 8 bit AVR Microcontroller 20MHz 1, 64kB, B Flash, 64B RAM, SPI 8-Pin SOIC" constant="no"/>
@@ -2658,6 +2690,31 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/sn74ls04"&gt; Datasheet &lt;/a&gt;
 </connects>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:10791262/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STM32G031">
+<gates>
+<gate name="G$1" symbol="STM32G031J6" x="1.016" y="-2.032"/>
+</gates>
+<devices>
+<device name="S08N" package="SOIC127P600X175-8N">
+<connects>
+<connect gate="G$1" pin="NRST" pad="4"/>
+<connect gate="G$1" pin="PA12" pad="6"/>
+<connect gate="G$1" pin="PA13" pad="7"/>
+<connect gate="G$1" pin="PA8" pad="5"/>
+<connect gate="G$1" pin="PB5" pad="8"/>
+<connect gate="G$1" pin="PB7" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+<connect gate="G$1" pin="VSS" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16126582/1"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>

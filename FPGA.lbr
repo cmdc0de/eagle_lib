@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.1">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -607,6 +607,76 @@ Source: &lt;a href="http://www.latticesemi.com/~/media/LatticeSemi/Documents/Dat
 </devices>
 </deviceset>
 <deviceset name="ICE5LP1K-SG48ITR" prefix="U">
+<description>Ic Fpga 1100luts 1.2v 48qfn</description>
+<gates>
+<gate name="G$1" symbol="ICE5LP1K-SG48ITR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN50P700X700X100-49N">
+<connects>
+<connect gate="G$1" pin="CDONE" pad="7"/>
+<connect gate="G$1" pin="CRESET_B" pad="8"/>
+<connect gate="G$1" pin="GND" pad="49"/>
+<connect gate="G$1" pin="IOB_0A" pad="46"/>
+<connect gate="G$1" pin="IOB_13B" pad="6"/>
+<connect gate="G$1" pin="IOB_16A" pad="9"/>
+<connect gate="G$1" pin="IOB_18A" pad="10"/>
+<connect gate="G$1" pin="IOB_20A" pad="11"/>
+<connect gate="G$1" pin="IOB_22A" pad="12"/>
+<connect gate="G$1" pin="IOB_23B" pad="21"/>
+<connect gate="G$1" pin="IOB_24A" pad="13"/>
+<connect gate="G$1" pin="IOB_25B_G3" pad="20"/>
+<connect gate="G$1" pin="IOB_29B" pad="19"/>
+<connect gate="G$1" pin="IOB_2A" pad="47"/>
+<connect gate="G$1" pin="IOB_31B" pad="18"/>
+<connect gate="G$1" pin="IOB_32A_SPI_SO" pad="14"/>
+<connect gate="G$1" pin="IOB_33B_SPI_SI" pad="17"/>
+<connect gate="G$1" pin="IOB_34A_SPI_SCK" pad="15"/>
+<connect gate="G$1" pin="IOB_35B_SPI_CSN" pad="16"/>
+<connect gate="G$1" pin="IOB_3B_G6" pad="44"/>
+<connect gate="G$1" pin="IOB_4A" pad="48"/>
+<connect gate="G$1" pin="IOB_5B" pad="45"/>
+<connect gate="G$1" pin="IOB_6A" pad="2"/>
+<connect gate="G$1" pin="IOB_8A" pad="4"/>
+<connect gate="G$1" pin="IOB_9B" pad="3"/>
+<connect gate="G$1" pin="IOT_36B" pad="25"/>
+<connect gate="G$1" pin="IOT_37A" pad="23"/>
+<connect gate="G$1" pin="IOT_38B" pad="27"/>
+<connect gate="G$1" pin="IOT_39A" pad="26"/>
+<connect gate="G$1" pin="IOT_41A" pad="28"/>
+<connect gate="G$1" pin="IOT_42B" pad="31"/>
+<connect gate="G$1" pin="IOT_43A" pad="32"/>
+<connect gate="G$1" pin="IOT_44B" pad="34"/>
+<connect gate="G$1" pin="IOT_45A_G1" pad="37"/>
+<connect gate="G$1" pin="IOT_46B_G0" pad="35"/>
+<connect gate="G$1" pin="IOT_48B" pad="36"/>
+<connect gate="G$1" pin="IOT_49A" pad="43"/>
+<connect gate="G$1" pin="IOT_50B" pad="38"/>
+<connect gate="G$1" pin="IOT_51A" pad="42"/>
+<connect gate="G$1" pin="RGB0" pad="41"/>
+<connect gate="G$1" pin="RGB1" pad="40"/>
+<connect gate="G$1" pin="RGB2" pad="39"/>
+<connect gate="G$1" pin="SPI_VCCIO1" pad="22"/>
+<connect gate="G$1" pin="VCC" pad="5 30"/>
+<connect gate="G$1" pin="VCCIO_0" pad="33"/>
+<connect gate="G$1" pin="VCCIO_2" pad="1"/>
+<connect gate="G$1" pin="VCCPLL" pad="29"/>
+<connect gate="G$1" pin="VPP_2V5" pad="24"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" 1100logic cells 48 pin QFN industrial temp reels "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="220-2155-1-ND"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/lattice-semiconductor-corporation/ICE5LP1K-SG48ITR/220-2155-1-ND/8255949?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
+<attribute name="MF" value="Lattice Semiconductor"/>
+<attribute name="MP" value="ICE5LP1K-SG48ITR"/>
+<attribute name="PACKAGE" value="QFN-48 Lattice Semiconductor"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ICE5LP2K-SG48ITR" prefix="U">
 <description>Ic Fpga 1100luts 1.2v 48qfn</description>
 <gates>
 <gate name="G$1" symbol="ICE5LP1K-SG48ITR" x="0" y="0"/>
