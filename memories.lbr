@@ -1419,7 +1419,10 @@ of the Serial Input (SI), Serial Output (SO), and the Serial Clock (SCK).</descr
 <package3dinstance package3d_urn="urn:adsk.eagle:package:16537180/1"/>
 </package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DESCRIPTION" value=" SST39SF Series 1 Mbit 128 K x 8 5 V Multi-Purpose Flash - PLCC-32 "/>
+<attribute name="MP" value="SST39SF010A-70-4C-NHE"/>
+</technology>
 </technologies>
 </device>
 </devices>
