@@ -2440,6 +2440,18 @@ chip</description>
 <text x="-0.889" y="0.889" size="1.27" layer="25">&gt;NAME</text>
 <text x="-0.889" y="-2.032" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="SCREW-TERM-EP">
+<description>1 GND&lt;br&gt;
+2 PWR IN&lt;br&gt;
+3 OUT&lt;br&gt;</description>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.127" layer="21"/>
+<pad name="2" x="0" y="2.5" drill="0.9" diameter="1.6764"/>
+<pad name="1" x="-2.5" y="0" drill="0.9" diameter="1.6764"/>
+<pad name="3" x="2.5" y="0" drill="0.9" diameter="1.6764"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="C0805" urn="urn:adsk.eagle:package:8118586/1" type="box">
@@ -2642,6 +2654,9 @@ chip</description>
 <wire x1="0" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="3-POLE-POTENTIOMETER">
+<description>P1 = GND
+P2 = Input To Potentiometer
+P3 = Output from Potentiometer</description>
 <pin name="P1" x="7.62" y="5.08" length="middle" rot="R180"/>
 <pin name="P2" x="7.62" y="0" length="middle" rot="R180"/>
 <pin name="P3" x="7.62" y="-5.08" length="middle" rot="R180"/>
@@ -3861,6 +3876,23 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/MEM2012S101RT
 <connect gate="A" pin="P1" pad="1"/>
 <connect gate="A" pin="P2" pad="2"/>
 <connect gate="A" pin="P3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POTENTIOMETER">
+<gates>
+<gate name="G$1" symbol="3-POLE-POTENTIOMETER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SCREW-TERM-EP">
+<connects>
+<connect gate="G$1" pin="P1" pad="1"/>
+<connect gate="G$1" pin="P2" pad="2"/>
+<connect gate="G$1" pin="P3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
