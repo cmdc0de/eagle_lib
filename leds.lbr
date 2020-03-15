@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -782,12 +782,34 @@
 <wire x1="-2.2" y1="4.35" x2="-1.7" y2="4.85" width="0.1" layer="51"/>
 <wire x1="-3.65" y1="5" x2="-2.2" y2="5" width="0.2" layer="21"/>
 </package>
+<package name="LEDC1606X95N" urn="urn:adsk.eagle:footprint:18166204/1">
+<description>Chip, 1.65 X 0.65 X 0.95 mm body
+&lt;p&gt;Chip package with body size 1.65 X 0.65 X 0.95 mm&lt;/p&gt;</description>
+<wire x1="0.85" y1="0.689" x2="-1.479" y2="0.689" width="0.12" layer="21"/>
+<wire x1="-1.479" y1="0.689" x2="-1.479" y2="-0.689" width="0.12" layer="21"/>
+<wire x1="-1.479" y1="-0.689" x2="0.85" y2="-0.689" width="0.12" layer="21"/>
+<wire x1="0.85" y1="-0.35" x2="-0.85" y2="-0.35" width="0.12" layer="51"/>
+<wire x1="-0.85" y1="-0.35" x2="-0.85" y2="0.35" width="0.12" layer="51"/>
+<wire x1="-0.85" y1="0.35" x2="0.85" y2="0.35" width="0.12" layer="51"/>
+<wire x1="0.85" y1="0.35" x2="0.85" y2="-0.35" width="0.12" layer="51"/>
+<smd name="1" x="-0.8201" y="0" dx="0.8098" dy="0.75" layer="1"/>
+<smd name="2" x="0.8201" y="0" dx="0.8098" dy="0.75" layer="1"/>
+<text x="0" y="1.324" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.324" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="APA102_5050" urn="urn:adsk.eagle:package:15294973/2" type="model">
 <description>APA102 RGB LED</description>
 <packageinstances>
 <packageinstance name="APA102_5050"/>
+</packageinstances>
+</package3d>
+<package3d name="LEDC1606X95N" urn="urn:adsk.eagle:package:18166194/1" type="model">
+<description>Chip, 1.65 X 0.65 X 0.95 mm body
+&lt;p&gt;Chip package with body size 1.65 X 0.65 X 0.95 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="LEDC1606X95N"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1233,6 +1255,18 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="XZCFBB53W-8VF-2MA-LED" package="LEDC1606X95N">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:18166194/1"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
