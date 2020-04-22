@@ -1082,6 +1082,32 @@
 <pad name="27" x="3.96" y="13.97" drill="0.85"/>
 <pad name="28" x="3.96" y="16.51" drill="0.85"/>
 </package>
+<package name="DIP-16">
+<wire x1="1.27" y1="11.43" x2="-1.27" y2="11.43" width="0.127" layer="21" curve="-180"/>
+<wire x1="-2.54" y1="-11.43" x2="2.54" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="11.43" x2="-2.54" y2="11.43" width="0.127" layer="21"/>
+<wire x1="1.27" y1="11.43" x2="2.54" y2="11.43" width="0.127" layer="21"/>
+<wire x1="3.81" y1="11.43" x2="2.54" y2="11.43" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="11.43" x2="-3.81" y2="11.43" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-11.43" x2="2.54" y2="-11.43" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-11.43" x2="-3.81" y2="-11.43" width="0.127" layer="21"/>
+<pad name="P$1" x="-3.81" y="8.89" drill="1.016" shape="square"/>
+<pad name="P$2" x="-3.81" y="6.35" drill="1.016"/>
+<pad name="P$3" x="-3.81" y="3.81" drill="1.016"/>
+<pad name="P$4" x="-3.81" y="1.27" drill="1.016"/>
+<pad name="P$5" x="-3.81" y="-1.27" drill="1.016"/>
+<pad name="P$6" x="-3.81" y="-3.81" drill="1.016"/>
+<pad name="P$7" x="-3.81" y="-6.35" drill="1.016"/>
+<pad name="P$8" x="-3.81" y="-8.89" drill="1.016"/>
+<pad name="P$9" x="3.81" y="-8.89" drill="1.016"/>
+<pad name="P$10" x="3.81" y="-6.35" drill="1.016"/>
+<pad name="P$11" x="3.81" y="-3.81" drill="1.016"/>
+<pad name="P$12" x="3.81" y="-1.27" drill="1.016"/>
+<pad name="P$13" x="3.81" y="1.27" drill="1.016"/>
+<pad name="P$14" x="3.81" y="3.81" drill="1.016"/>
+<pad name="P$15" x="3.81" y="6.35" drill="1.016"/>
+<pad name="P$16" x="3.81" y="8.89" drill="1.016"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="DIP1587W58P254L5175H635Q40B" urn="urn:adsk.eagle:package:10791262/1" type="model">
@@ -1800,6 +1826,41 @@ data outputs.</description>
 <pin name="VIN-" x="-17.78" y="-10.16" length="middle" direction="pwr"/>
 <pin name="GND" x="-17.78" y="-12.7" length="middle" direction="pas"/>
 <pin name="SDA" x="17.78" y="7.62" length="middle" rot="R180"/>
+</symbol>
+<symbol name="74HC595">
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-25.4" x2="10.16" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="-10.16" y2="22.86" width="0.254" layer="94"/>
+<text x="12.1979" y="15.5015" size="1.778859375" layer="97">1</text>
+<text x="12.1941" y="10.4158" size="1.7783" layer="97">2</text>
+<text x="12.2076" y="20.6004" size="1.78028125" layer="97">16</text>
+<text x="12.2138" y="5.34351875" size="1.78116875" layer="97">3</text>
+<text x="12.197" y="0.254103125" size="1.77873125" layer="97">4</text>
+<text x="12.2101" y="-4.83316875" size="1.780640625" layer="97">5</text>
+<text x="12.1963" y="-9.9095" size="1.77863125" layer="97">6</text>
+<text x="12.1983" y="-14.9938" size="1.77891875" layer="97">7</text>
+<text x="12.2131" y="-22.6451" size="1.78108125" layer="97">9</text>
+<text x="-15.2526" y="-22.6247" size="1.77946875" layer="97">13</text>
+<text x="-15.2542" y="-14.9999" size="1.77965" layer="97">10</text>
+<text x="-15.2455" y="5.33593125" size="1.778640625" layer="97">12</text>
+<text x="-15.2415" y="10.415" size="1.77816875" layer="97">11</text>
+<text x="-15.2466" y="20.5829" size="1.77876875" layer="97">14</text>
+<text x="-5.59366875" y="-27.9683" size="1.7798" layer="97">74HC595</text>
+<pin name="QE" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="QD" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="QC" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="QB" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="QA" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="QF" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="QG" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="QH" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="QH*" x="15.24" y="-22.86" length="middle" rot="R180"/>
+<pin name="SCK" x="-15.24" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="RCK" x="-15.24" y="5.08" length="middle" direction="in" function="clk"/>
+<pin name="GND" x="-15.24" y="-22.86" length="middle" direction="pwr" function="dot"/>
+<pin name="SCL" x="-15.24" y="-15.24" length="middle" direction="pwr" function="dot"/>
+<pin name="SER" x="-15.24" y="20.32" length="middle" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2794,6 +2855,41 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/sn74ls04"&gt; Datasheet &lt;/a&gt;
 <attribute name="MP" value="INA219AIDR"/>
 <attribute name="PACKAGE" value="SOIC-8 Texas Instruments"/>
 <attribute name="PRICE" value="None"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN74HC595N">
+<gates>
+<gate name="G$1" symbol="74HC595" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DIP-16" package="DIP-16">
+<connects>
+<connect gate="G$1" pin="GND" pad="P$13"/>
+<connect gate="G$1" pin="QA" pad="P$15"/>
+<connect gate="G$1" pin="QB" pad="P$1"/>
+<connect gate="G$1" pin="QC" pad="P$2"/>
+<connect gate="G$1" pin="QD" pad="P$3"/>
+<connect gate="G$1" pin="QE" pad="P$4"/>
+<connect gate="G$1" pin="QF" pad="P$5"/>
+<connect gate="G$1" pin="QG" pad="P$6"/>
+<connect gate="G$1" pin="QH" pad="P$7"/>
+<connect gate="G$1" pin="QH*" pad="P$9"/>
+<connect gate="G$1" pin="RCK" pad="P$12"/>
+<connect gate="G$1" pin="SCK" pad="P$11"/>
+<connect gate="G$1" pin="SCL" pad="P$10"/>
+<connect gate="G$1" pin="SER" pad="P$14"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value=" Shift Shift Register 1 Element 8 Bit 16-SO "/>
+<attribute name="DIGI-KEY_PART_NUMBER" value="296-26485-2-ND"/>
+<attribute name="DIGI-KEY_PURCHASE_URL" value="https://www.digikey.com/product-detail/en/texas-instruments/SN74HC595NSR/296-26485-2-ND/1571271?utm_source=snapeda&amp;utm_medium=aggregator&amp;utm_campaign=symbol"/>
+<attribute name="MF" value="Texas Instruments"/>
+<attribute name="MP" value="SN74HC595N"/>
+<attribute name="PACKAGE" value="PDIP-16 Texas Instruments"/>
 </technology>
 </technologies>
 </device>
