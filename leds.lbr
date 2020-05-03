@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.0">
+<eagle version="9.6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -797,6 +797,21 @@
 <text x="0" y="1.324" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.324" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+<package name="1.6X1.6-RGB">
+<description>DFN4, 1.60 X 1.60 X 1.20 mm body
+&lt;p&gt;DFN4 package with body size 1.60 X 1.60 X 1.20 mm&lt;/p&gt;</description>
+<circle x="1.469" y="-0.591" radius="0.127" width="0" layer="21"/>
+<wire x1="0.8" y1="-0.8" x2="-0.8" y2="-0.8" width="0.12" layer="51"/>
+<wire x1="-0.8" y1="-0.8" x2="-0.8" y2="0.8" width="0.12" layer="51"/>
+<wire x1="-0.8" y1="0.8" x2="0.8" y2="0.8" width="0.12" layer="51"/>
+<wire x1="0.8" y1="0.8" x2="0.8" y2="-0.8" width="0.12" layer="51"/>
+<smd name="3" x="-0.6201" y="0.425" dx="0.9098" dy="0.3525" layer="1"/>
+<smd name="2" x="-0.6201" y="-0.425" dx="0.9098" dy="0.3525" layer="1"/>
+<smd name="1" x="0.6201" y="-0.425" dx="0.9098" dy="0.3525" layer="1"/>
+<smd name="4" x="0.6201" y="0.425" dx="0.9098" dy="0.3525" layer="1"/>
+<text x="0" y="1.5502" size="0.6096" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.5502" size="0.6096" layer="27" align="top-center">&gt;VALUE</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="APA102_5050" urn="urn:adsk.eagle:package:15294973/2" type="model">
@@ -1059,6 +1074,12 @@ PIN4 = DIN</description>
 <pin name="LED13" x="35.56" y="-40.64" length="middle" rot="R180"/>
 <pin name="VSS_3" x="35.56" y="-43.18" length="middle" rot="R180"/>
 <pin name="LED12" x="35.56" y="-45.72" length="middle" rot="R180"/>
+</symbol>
+<symbol name="XZCMEDGCBD110W-RGB">
+<pin name="VCC" x="-12.7" y="2.54" length="middle" direction="pwr"/>
+<pin name="GREEN" x="-12.7" y="-2.54" length="middle"/>
+<pin name="RED" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="BLUE" x="12.7" y="2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1476,6 +1497,24 @@ Source: &lt;a href="https://www.mouser.be/datasheet/2/302/PCA9956B-1127643.pdf"&
 <attribute name="MOUSER_PART_NUMBER" value="771-PCA9956BTWY" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XZCMEDGCBD110W-RGB">
+<gates>
+<gate name="G$1" symbol="XZCMEDGCBD110W-RGB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1.6X1.6-RGB">
+<connects>
+<connect gate="G$1" pin="BLUE" pad="4"/>
+<connect gate="G$1" pin="GREEN" pad="3"/>
+<connect gate="G$1" pin="RED" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
